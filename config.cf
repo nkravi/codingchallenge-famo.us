@@ -1,0 +1,8 @@
+[database]
+dbserver=localhost
+dbport=27017
+dbname=famo
+
+[server]
+serverip=localhost
+serverport=5001
