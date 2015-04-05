@@ -85,5 +85,5 @@ class postData:
 if  __name__ == "__main__":
 	config = ConfigParser.ConfigParser()
 	config.read("config.cf")
-	app.debug = True
-	app.run(port=5001)
+#	app.debug = True
+	app.run(host='0.0.0.0',port=5000)

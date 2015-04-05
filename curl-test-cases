@@ -1,18 +1,19 @@
 
-curl -H "content-Type: application/json" -d '{"fileName":"abc1.txt","fileContent":"this is a first file"}' http://127.0.0.1:5001/post
+curl -H "content-Type: application/json" -d '{"fileName":"abc1.txt","fileContent":"this is a first file"}' http://127.0.0.1:5000/post
  
-curl -H "content-Type: application/json" -d '{"fileName":"abc2.txt","fileContent":"this is the second file"}' http://127.0.0.1:5001/post
+curl -H "content-Type: application/json" -d '{"fileName":"abc2.txt","fileContent":"this is the second file"}' http://127.0.0.1:5000/post
 
-curl -H "content-Type: application/json" -d '{"fileName":"abc3.txt","fileContent":"this is the third file"}' http://127.0.0.1:5001/post
-
-curl http://127.0.0.1:5001/get
+curl -H "content-Type: application/json" -d '{"fileName":"abc3.txt","fileContent":"this is the third file"}' http://127.0.0.1:5000/post
 
 curl http://127.0.0.1:5001/get
 
-curl -H "content-Type: application/json" -d '{"fileName":"abc4.txt","fileContent":"this is the fourth file"}' http://127.0.0.1:5001/post
+curl http://127.0.0.1:5001/get
+
+curl -H "content-Type: application/json" -d '{"fileName":"abc4.txt","fileContent":"this is the fourth file"}' http://127.0.0.1:5000/post
 
 curl http://127.0.0.1:5001/get
 
 curl http://127.0.0.1:5001/get
 
 curl -H "content-Type: application/json" -d '{"fileName":"  ","fileContent":"  "}' http://127.0.0.1:5001/post
+
