@@ -12,6 +12,10 @@
 * Dockerfile             - run this to create docker image
 * config.cf              - contains cofiguration such as port number, db connection etc
 
+```sh
+$ python server.py
+```
+
 ###api calls
 ```sh
 $ curl -H "content-Type: application/json" -d '{"fileName":"abc1.txt","fileContent":"this is a first file"}' http://127.0.0.1:5000/post
