@@ -35,3 +35,19 @@ $ curl http://127.0.0.1:5000/get
 ###validations
 - fileName and fileContent cannot be empty 
 
+###schema
+```sh
+schema = {
+			"title":"Input Message Schema",
+			"type":"object",
+			"properties":{
+				"fileName":{
+					"type":"string"
+				},
+				"fileContent":{
+					"type":"string"
+				}
+			},
+			"required":["fileName","fileContent"]
+		}
+```
